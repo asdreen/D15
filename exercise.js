@@ -64,10 +64,36 @@ let multiArray = Array(3).fill().map(
      
      console.log(highest)
 
-/*    exercise 31    */
+/*    exercise 31 (DOM Exercises)   */
 const getElement = document.getElementById("container");
 console.log(getElement);
 
 /*    exercise 32    */
 const getName = document.getElementsByTagName('td');
 console.log(getName);
+
+/*    exercise 33    */
+const printTd = function () {
+   for (let i = 0; i <getAlltd.length; i++) {
+       getAlltd[i].innerText
+    }
+}
+printTd();
+
+/*    exercise 34    */
+const h1 = document.querySelector("h1") [0];
+        h1.innerText = "My New Page"
+    console.log(h1);
+
+
+/*    exercise 35    */
+const extraRow = function () {
+   const cTable = document.getElementById("border");
+    console.log(cTable);
+   const addRow = document.createElement("tr");
+   addRow.className = "tr"
+   addRow.innerText = "This is a new Row"
+   cTable.appendChild(addRow);
+}
+extraRow();
+

@@ -44,7 +44,7 @@ td {
 }
 
 /*    exercise 20    */
-.one {
+tr {
     border-style: dotted;
     border-color: red;
     border: thick;
