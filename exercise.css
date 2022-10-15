@@ -1,0 +1,62 @@
+/*    exercise 17    */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,600&family=Pacifico&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*    exercise 11    */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: darkcyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*    exercise 12    */
+h1 {
+    text-align: center;
+}
+
+/*    exercise 13    */
+a:link {
+    color: beige;
+} 
+
+/*    exercise 14, 15    */
+.border {
+    border: thick;
+    border-style: groove;
+    color: black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    border: "1";
+}
+
+
+/*    exercise 18    */
+.hidecontent {
+    display: none;
+}
+
+/*    exercise 19    */
+td {
+    border-color: green;
+    border: thick;
+}
+
+/*    exercise 20    */
+.one {
+    border-style: dotted;
+    border-color: red;
+    border: thick;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*    exercise 16    */
+p{
+    margin: 0 0 10px 0;
+}

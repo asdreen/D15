@@ -3,36 +3,36 @@
   <!--
         HTML EXERCISES
 
-        1) Create a title for this webpage                                             (done)
-        2) Create a heading of your choice                                             (done)
-        3) Create an ordered list with some list items into it                         (done)
-        4) Create a table with 5 columns and 4 rows                                    (done)
-        5) Add an image to each second cell of every row                               (done)
-        6) Add a anchor link for every image                                           (done)
-        7) Merge together 2 table cells                                                (done)
-        8) Divide the page using a horizontal line                                     (done)
-        9) Create a container with a nested paragraph and a nested unordered list      (done)
-        10) Create a footer with some information about the page creator               (done)
+        1) Create a title for this webpage                                                                                          (done)
+        2) Create a heading of your choice                                                                                          (done)
+        3) Create an ordered list with some list items into it                                                                      (done)
+        4) Create a table with 5 columns and 4 rows                                                                                 (done)
+        5) Add an image to each second cell of every row                                                                            (done)
+        6) Add a anchor link for every image                                                                                        (done)
+        7) Merge together 2 table cells                                                                                             (done)
+        8) Divide the page using a horizontal line                                                                                  (done)
+        9) Create a container with a nested paragraph and a nested unordered list                                                   (done)
+        10) Create a footer with some information about the page creator                                                            (done)
 
         CSS EXERCISES
 
-        11) Give a maximum width to the body and center it into the page
-        12) Set every h1 to be centered
-        13) Change the color of each link in the page
-        14) Create a class with a border assigned to it
-        15) Set the previously created table to have rounded corners
-        16) Add a margin between every paragraph
-        17) Create a class which changes font size and text weight when applied
-        18) Create a class to hide a piece of content
-        19) Add a green border to each <td>
-        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+        11) Give a maximum width to the body and center it into the page                                                            (done)
+        12) Set every h1 to be centered                                                                                             (done)
+        13) Change the color of each link in the page                                                                               (done)
+        14) Create a class with a border assigned to it                                                                             (done)
+        15) Set the previously created table to have rounded corners                                                                (done)
+        16) Add a margin between every paragraph                                                                                    (done)
+        17) Create a class which changes font size and text weight when applied                                                     (done)
+        18) Create a class to hide a piece of content                                                                               (done)
+        19) Add a green border to each <td>                                                                                         (done)
+        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)                                     (done)
 
         JS EXERCISES
 
-        21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
-        22) Create an object with properties such name, surname, email
-        23) Delete the email property from the previously created object
-        24) Create an array with 10 strings in it
+        21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"                                            (done)
+        22) Create an object with properties such name, surname, email                                                              (done)
+        23) Delete the email property from the previously created object                                                            (done)
+        24) Create an array with 10 strings in it                                                                                   (done)
         25) Print in the console every string from the previous array
         26) Create an array with 100 random numbers in it
         27) Write a function to get the maximum and minimum values from the previously created array
@@ -74,6 +74,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./exercise.css">
   <title>Exercises</title>
 </head>
 <body>
@@ -88,40 +89,41 @@
     <li>item 2</li>
     <li>item 3</li>
     <li>item 4</li>
-    <li>item 5</li>
+    <li class="hidecontent">item 5</li>
   </ol>
-
+<table class="border">
 <!-- exercise 3, 4, 5, 6, 7 -->
-  <tr>
-    <td colspan="2">Column 1</td>
-    <td>Column 2 <a href="https://unsplash.com/s/photos/lago-di-braies"> <img src="images/image 1.webp" alt=""> </td>
-    <td>Column 3</td>
-    <td>Column 4</td>
-    <td>Column 5</td>
+  <tr class="one">
+    <td></td>
+    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 1.webp" alt=""> </a> </td>
+    <td colspan="1"></td>
+    <td colspan="2"></td>
+    <td></td>
   </tr>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2 <a href="https://unsplash.com/s/photos/lago-di-braies"><img src="images/image 2.webp" alt=""> </td>
-    <td>Column 3</td>
-    <td>Column 4</td>
-    <td>Column 5</td>
+  <tr class="one">
+    <td></td>
+    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 2.webp" alt=""></a> </td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2 <a href="https://unsplash.com/s/photos/lago-di-braies"> <img src="images/image 3.webp" alt=""> </td>
-    <td>Column 3</td>
-    <td>Column 4</td>
-    <td>Column 5</td>
+  <tr class="one">
+    <td></td>
+    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 3.webp" alt=""></a> </td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2 <a href="https://unsplash.com/s/photos/lago-di-braies"><img src="images/image 4.webp" alt=""> </td>
-    <td>Column 3</td>
-    <td>Column 4</td>
-    <td>Column 5</td>
+  <tr class="one">
+    <td></td>
+    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 4.webp" alt=""></a> </td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
+</table>
 
-
+<!-- exercise 9 -->
   <div class="container">
   <p>Nested Ordered List</p>
   <ol>
@@ -135,10 +137,12 @@
       <li>Milk</li>
   </ol>
 </div>
+
+<!-- exercise 10 -->
+<footer>
+  @Copyright JavaTpoint 2022- All Right Reserved by Asdren Jerliu
+</footer>
+<script src="./exercise.js"></script>
 </body>
 </html>
-
-  <!-- exercise 9 -->
-  <head> </head>
-  <body></body>
-</html>
+  
