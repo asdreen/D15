@@ -79,7 +79,7 @@ const printTd = function () {
        getName[i].innerText
     }
 }
-printTd();
+console.log(printTd);
 
 /*    exercise 34    */
 
@@ -138,3 +138,16 @@ function empty(element) {
   }
   let parent = document.getElementById("parent");
   empty(parent);
+
+
+
+
+  /*    exercise 41 (Extras Exercises)   */
+  function mouseOver() {
+    document.getElementsByTagName("a").style.color = "Green";
+  }
+  
+  function mouseOut() {
+    document.getElementsByTagName("a").style.color = "black";
+  }
+  mouseOver();
