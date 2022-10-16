@@ -64,8 +64,9 @@ let multiArray = Array(3).fill().map(
      
      console.log(highest)
 
+
 /*    exercise 31 (DOM Exercises)   */
-const getElement = document.getElementById("container");
+const getElement = document.getElementById("border");
 console.log(getElement);
 
 /*    exercise 32    */
