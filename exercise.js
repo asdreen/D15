@@ -179,3 +179,15 @@ document.getElementById("val").innerHTML = "Sum Value = " + sumVal
 console.log(sumVal);
 
 /*    exercise 45     */
+const numberOne = document.querySelector('h1');
+
+// EVENT LISTENER TO CONCATINATE 1
+numberOne.addEventListener('click', runEventOne);
+
+function runEventOne(e) {
+  if (Result.textContent === 'RESULT HERE' || Result.textContent === '0') {
+    Result.textContent = 1;
+  } else {
+    Result.textContent += 1;
+  }
+}
