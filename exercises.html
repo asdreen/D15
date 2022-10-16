@@ -80,9 +80,10 @@
 <body onload="console.log('The Script will load now.')">
   <!-- exercise 8 -->
   <hr>
+  <button onclick="myFunction()">Try it</button>
 <!-- exercise 1 -->
   <h1>My page</h1>
-
+  
 <!-- exercise 2 -->
   <ol id="parent">
     <li>Item 1</li>
@@ -94,35 +95,37 @@
  
 <table id="border">
 <!-- exercise 3, 4, 5, 6, 7 -->
+
   <tr>
     <td class= "test" colspan="2">Product a</td>
-    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()"  aria-label="/"> <img src="images/image 1.webp" alt=""> </a> </td>
-    <td class= "test">Germany</td>
+    <td class= "test"> <img src="images/image 1.webp" id="img" alt=""></td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()"  aria-label="/"></a></td>
     <td class= "test">Number 42</td>
     <td class= "test">White</td>
   </tr>
   <tr>
     <td class= "test" colspan="2">Product b</td>
-    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"> <img src="images/image 2.webp" alt=""></a> </td>
-    <td class= "test">Germany</td>
+    <td class= "test"><img src="images/image 2.webp" id="img" alt=""> </td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"></td>
     <td class= "test">Number 42</td>
     <td class= "test">Blue</td>
   </tr>
   <tr>
     <td class= "test" colspan="2">Product c</td>
-    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"> <img src="images/image 3.webp" alt=""></a> </td>
-    <td class= "test">Germany</td>
+    <td class= "test"><img id="img" src="images/image 3.webp" alt=""></td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"></td>
     <td class= "test">Number 42</td>
     <td class= "test">Green</td>
   </tr>
   <tr>
     <td class= "test" colspan="2">Product d</td>
-    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"> <img src="images/image 4.webp" alt=""></a> </td>
-    <td class= "test">Germany</td>
+    <td class= "test"><img src="images/image 4.webp" id="img" alt=""> </td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" onmouseover="mouseOver()" onmouseout="mouseOut()" aria-label="/"></td>
     <td class= "test">Number 42</td>
     <td class= "test">Grey</td>
   </tr>
 </table>
+<span id="val"></span>
 
 <!-- exercise 9 -->
   <div id= "container">
@@ -144,6 +147,7 @@
   @Copyright JavaTpoint 2022- All Right Reserved by Asdren Jerliu
 </footer>
 <script src="./exercise.js"></script>
+
 </body>
 </html>
   

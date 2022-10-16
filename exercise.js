@@ -142,7 +142,7 @@ function empty(element) {
 
 
 
-  /*    exercise 41 (Extras Exercises)   */
+/*    exercise 41 (Extras Exercises)   */
   function mouseOver() {
     document.getElementsByTagName("a:link").style.color = "Green";
   }
@@ -151,3 +151,31 @@ function empty(element) {
     document.getElementsByTagName("a:link").style.color = "black";
   }
   mouseOver();
+
+
+/*    exercise 42      */
+  function myFunction(){
+    document.getElementsByTagName('img')[0].style.display = "none"
+  }
+
+/*    exercise 43     */
+  function myFunction() {
+    let x = document.getElementById("border");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+/*    exercise 44     */
+let sumTable = document.getElementById("border"), sumVal = 0;
+for(let i = 1; i < sumTable.row.length; i++)
+{
+    sumTable = sumTable + parseInt(sumTable.rows[i].cells[2].innerHTML);
+}
+document.getElementById("val").innerHTML = "Sum Value = " + sumVal
+console.log(sumVal);
+
+/*    exercise 45     */
