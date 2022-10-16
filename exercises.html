@@ -42,16 +42,16 @@
 
         DOM EXERCISES
 
-        31) Get the element with an id of "container" from the page
-        32) Get every <td> element from the page
-        33) Use a loop for printing the text inside of every <td> element in the page
-        34) Write a function to change the heading of the page
-        35) Write a function to add an extra row to the table
-        36) Write a function to add a class of "test" to each row in the table
-        37) Write a function to add a red background to every link in the page
-        38) Console log "Page loaded" when the page is correctly loaded
-        39) Write a function to add new items to a unordered list
-        40) Write a function to empty a list
+        31) Get the element with an id of "container" from the page                                                                 (done)
+        32) Get every <td> element from the page                                                                                    (done)
+        33) Use a loop for printing the text inside of every <td> element in the page                                               (done)
+        34) Write a function to change the heading of the page                                                                      (done)
+        35) Write a function to add an extra row to the table                                                                       (done)
+        36) Write a function to add a class of "test" to each row in the table                                                      (done)
+        37) Write a function to add a red background to every link in the page                                                      (done)
+        38) Console log "Page loaded" when the page is correctly loaded                                                             (done)
+        39) Write a function to add new items to a unordered list                                                                   (done)
+        40) Write a function to empty a list                                                                                        (done)
 
         EXTRA EXERCISES
 
@@ -77,65 +77,66 @@
   <link rel="stylesheet" href="./exercise.css">
   <title>Exercises</title>
 </head>
-<body>
+<body onload="console.log('The Script will load now.')">
   <!-- exercise 8 -->
   <hr>
 <!-- exercise 1 -->
   <h1>My page</h1>
 
 <!-- exercise 2 -->
-  <ol>
+  <ol id="parent">
     <li>Item 1</li>
     <li>item 2</li>
     <li>item 3</li>
     <li>item 4</li>
     <li class="hidecontent">item 5</li>
   </ol>
-<table class="border">
+ 
+<table id="border">
 <!-- exercise 3, 4, 5, 6, 7 -->
   <tr>
-    <td colspan="2">Product a</td>
-    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 1.webp" alt=""> </a> </td>
-    <td>Germany</td>
-    <td>Number 42</td>
-    <td>White</td>
+    <td class= "test" colspan="2">Product a</td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 1.webp" alt=""> </a> </td>
+    <td class= "test">Germany</td>
+    <td class= "test">Number 42</td>
+    <td class= "test">White</td>
   </tr>
   <tr>
-    <td>Product b</td>
-    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 2.webp" alt=""></a> </td>
-    <td>Germany</td>
-    <td>Number 42</td>
-    <td>Blue</td>
+    <td class= "test">Product b</td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 2.webp" alt=""></a> </td>
+    <td class= "test">Germany</td>
+    <td class= "test">Number 42</td>
+    <td class= "test">Blue</td>
   </tr>
   <tr>
-    <td>Product c</td>
-    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 3.webp" alt=""></a> </td>
-    <td>Germany</td>
-    <td>Number 42</td>
-    <td>Green</td>
+    <td class= "test" colspan="2">Product c</td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 3.webp" alt=""></a> </td>
+    <td class= "test">Germany</td>
+    <td class= "test">Number 42</td>
+    <td class= "test">Green</td>
   </tr>
   <tr>
-    <td>Product d</td>
-    <td><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 4.webp" alt=""></a> </td>
-    <td>Germany</td>
-    <td>Number 42</td>
-    <td>Grey</td>
+    <td class= "test">Product d</td>
+    <td class= "test"><a href="https://unsplash.com/s/photos/lago-di-braies" aria-label="/"> <img src="images/image 4.webp" alt=""></a> </td>
+    <td class= "test">Germany</td>
+    <td class= "test">Number 42</td>
+    <td class= "test">Grey</td>
   </tr>
 </table>
 
 <!-- exercise 9 -->
   <div id= "container">
   <p>Nested Ordered List</p>
-  <ol>
+  <ul>
       <li>Coffee</li>
       <li> Tea
-          <ol>
+          <ul>
               <li>Black tea</li>
               <li>Green tea</li>
-          </ol>
+          </ul>
       </li>
       <li>Milk</li>
-  </ol>
+  </ul>
 </div>
 
 <!-- exercise 10 -->

@@ -74,26 +74,66 @@ console.log(getName);
 
 /*    exercise 33    */
 const printTd = function () {
-   for (let i = 0; i <getAlltd.length; i++) {
-       getAlltd[i].innerText
+   for (let i = 0; i <getName.length; i++) {
+       getName[i].innerText
     }
 }
 printTd();
 
 /*    exercise 34    */
-const h1 = document.querySelector("h1") [0];
-        h1.innerText = "My New Page"
-    console.log(h1);
+
+const h1 = document.querySelector("h1");
+        h1.innerText = "My New Page";
+        console.log(h1);
 
 
 /*    exercise 35    */
-const extraRow = function () {
-   const cTable = document.getElementById("border");
-    console.log(cTable);
-   const addRow = document.createElement("tr");
-   addRow.className = "tr"
-   addRow.innerText = "This is a new Row"
-   cTable.appendChild(addRow);
+function addRow(tableID) {
+   
+    let tableRef = document.getElementById(tableID);
+    let newRow = tableRef.insertRow(-1);
+    let newCell = newRow.insertCell(0);
+    let newText = document.createTextNode('New bottom row');
+    newCell.appendChild(newText);
+  }
+   addRow('border');
+   
+/*    exercise 36    */
+const addClaas = function () {
+    const tableRow = document.querySelectorAll("tr")
+    for (let i = 0; i < tableRow.length; i++) {
+        tableRow[i].classList.add("test")
+    }
 }
-extraRow();
+addClaas();
 
+/*    exercise 37    */
+const addBackground = function () {
+    const links = document.querySelectorAll("a")
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.backgroundColor = "red"
+    }
+}
+addBackground();
+
+/*    exercise 38    */
+window.onload = function exampleFunction() {
+    console.log('The Script will load now.');
+}
+
+/*    exercise 39    */
+let node = document.createElement('li');
+node.appendChild(document.createTextNode('Water'));
+ 
+document.querySelector('ul').appendChild(node);
+
+
+/*    exercise 40    */
+
+function empty(element) {
+    while(element.firstElementChild) {
+       element.firstElementChild.remove();
+    }
+  }
+  let parent = document.getElementById("parent");
+  empty(parent);

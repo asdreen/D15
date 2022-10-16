@@ -20,7 +20,7 @@ a:link {
 } 
 
 /*    exercise 14, 15    */
-.border {
+#border {
     border: thick;
     border-style: groove;
     color: black;
@@ -38,7 +38,7 @@ a:link {
 }
 
 /*    exercise 19    */
-td {
+.test {
     border-color: green;
     border: thick;
 }
@@ -60,3 +60,4 @@ img {
 p{
     margin: 0 0 10px 0;
 }
+
