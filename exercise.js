@@ -144,10 +144,10 @@ function empty(element) {
 
   /*    exercise 41 (Extras Exercises)   */
   function mouseOver() {
-    document.getElementsByTagName("a").style.color = "Green";
+    document.getElementsByTagName("a:link").style.color = "Green";
   }
   
   function mouseOut() {
-    document.getElementsByTagName("a").style.color = "black";
+    document.getElementsByTagName("a:link").style.color = "black";
   }
   mouseOver();
